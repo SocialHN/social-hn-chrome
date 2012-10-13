@@ -1,0 +1,57 @@
+body {
+  background: #e8e2d5;
+  font: 13px/1.5 Helvetica, arial, sans-serif; }
+
+.wrapper {
+  width: 550px;
+  margin: 40px auto 80px auto;
+  border: 1px solid white;
+  background-color: white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: #404040 0 5px 10px;
+  -moz-box-shadow: #404040 0 5px 10px;
+  box-shadow: #404040 0 5px 10px; }
+
+.header {
+  position: relative;
+  background-color: #eceff5;
+  background-image: -moz-linear-gradient(left, white, #eceff5);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(#eceff5));
+  background-image: -webkit-linear-gradient(left, white, #eceff5);
+  background-image: -o-linear-gradient(left, white, #eceff5);
+  background-image: linear-gradient(to right, white, #eceff5);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e9ecf3', GradientType=1);
+  border-bottom: 1px solid #dddddd;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px; }
+  .header h1 {
+    margin: 0;
+    line-height: 40px;
+    text-indent: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5d758a;
+    text-shadow: 0 1px 0 white;
+    font-weight: bold; }
+
+.options {
+  padding: 30px 10px 10px 10px;
+  position: relative; }
+  .options fieldset {
+    border: 1px solid #eeeeee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px; }
+    .options fieldset legend {
+      color: #999999;
+      font-size: 15px;
+      padding: 0 5px; }

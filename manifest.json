@@ -1,0 +1,17 @@
+{
+  "name": "Social HN",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Social HN.",
+  "icons": {"48": "icon.png"},
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["javascripts/vendor/jquery.js", "javascripts/content.js"]
+    }
+  ],
+  "options_page": "views/options.html",
+  "permissions": [
+    "tabs", "http://news.ycombinator.com/news"
+  ]
+}
