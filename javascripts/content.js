@@ -14,7 +14,7 @@ $(document).ready(function() {
       $.ajax({
         type: 'POST',
         url: 'http://socialhn.r12.railsrumble.com/bookmarks',
-        data: {url: url_hn, key: api_key}
+        data: {url: url_hn, api_key: api_key}
       });
     }
   });
