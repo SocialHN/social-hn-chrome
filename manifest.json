@@ -2,10 +2,10 @@
   "name": "Social HN",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Social HN.",
+  "description": "This is an extension for the social HN site. It allows you to store/share/follow/find the links you like on Hacker News.",
   "icons": {"48": "icon.png"},
   "background": {
-    "scripts": ["javascripts/background.js"]
+    "page": "views/background.html"
   },
   "content_scripts": [
     {

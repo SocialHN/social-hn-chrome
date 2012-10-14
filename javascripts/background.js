@@ -4,3 +4,12 @@ chrome.extension.onRequest.addListener(function(request, sender, sendResponse) {
   else
     sendResponse({});
 });
+
+function configure_now() {
+  if (localStorage.getItem('api_key'))
+    return;
+
+  chrome.tabs.create({url: "views/options.html"});
+}
+
+configure_now()
