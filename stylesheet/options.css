@@ -1,6 +1,46 @@
 body {
   background: #e8e2d5;
-  font: 13px/1.5 Helvetica, arial, sans-serif; }
+  font: 13px/1.5 Helvetica, arial, sans-serif;
+  margin: 0; }
+
+.tab-menu {
+  position: fixed;
+  width: 229px;
+  margin: 0;
+  float: left;
+  height: 100%;
+  background: -webkit-linear-gradient(rgba(240, 240, 240, 0.5), #fdfdfd), -webkit-linear-gradient(left, #fdfdfd, #fdfdfd 97%, #dddddd);
+  border-right: 1px solid;
+  border-color: #c3c3c3;
+  text-align: right; }
+  .tab-menu h1 {
+    margin: 20px 10px 17px 5px;
+    font-weight: normal;
+    font-size: 22px;
+    padding: 0;
+    color: #555555; }
+  .tab-menu ul.menu {
+    float: right;
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 20px; }
+    .tab-menu ul.menu li {
+      text-align: right;
+      width: 300px;
+      list-style-type: none;
+      padding: 3px 10px 3px 3px;
+      margin: 5px 0 0 0; }
+      .tab-menu ul.menu li a {
+        text-decoration: none;
+        color: #294266; }
+        .tab-menu ul.menu li a:visited {
+          text-decoration: none; }
+
+.content {
+  float: left;
+  width: 60%;
+  margin-left: 25%; }
 
 .wrapper {
   width: 550px;
@@ -16,14 +56,7 @@ body {
 
 .header {
   position: relative;
-  background-color: #eceff5;
-  background-image: -moz-linear-gradient(left, white, #eceff5);
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(#eceff5));
-  background-image: -webkit-linear-gradient(left, white, #eceff5);
-  background-image: -o-linear-gradient(left, white, #eceff5);
-  background-image: linear-gradient(to right, white, #eceff5);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#e9ecf3', GradientType=1);
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(white), to(#eceff5));
   border-bottom: 1px solid #dddddd;
   -webkit-border-top-left-radius: 5px;
   -moz-border-radius-topleft: 5px;
@@ -55,3 +88,19 @@ body {
       color: #999999;
       font-size: 15px;
       padding: 0 5px; }
+    .options fieldset input[type="text"] {
+      padding: 5px;
+      width: 300px; }
+
+.actions {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(whitesmoke), to(#eceff5));
+  border-top: 1px solid #dddddd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  text-align: right;
+  padding: 6px 10px; }
+  .actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-weight: 700; }
