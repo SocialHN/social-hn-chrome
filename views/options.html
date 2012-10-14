@@ -4,50 +4,36 @@
     <meta charset='utf-8' />
     <title>Social HN</title>
     <link href='../stylesheet/options.css' rel='stylesheet' />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;amp;subset=latin,latin-ext' rel='stylesheet' />
     <script src='../javascripts/vendor/jquery.js'></script>
     <script src='../javascripts/options.js'></script>
-    <script src='https://ssl.google-analytics.com/ga.js' type='text/javascript'></script>
   </head>
   <body>
-    <div class='tab-menu'>
-      <h1>
-        Links
-      </h1>
-      <ul class='menu'>
-        <li>
+    <div class='wrapper'>
+      <div class='header'>
+        <h1>Social HN</h1>
+      </div>
+      <div class='options'>
+        <div class='message'>
+          Get an API key for free by
           <a href='http://socialhn.r12.railsrumble.com/login/google_oauth2'>
-            Web Site
+            Google Account
           </a>
-        </li>
-        <li>
-          <a href='http://socialhn.r12.railsrumble.com/login/google_oauth2'>
-            Login with Google Account
-          </a>
-        </li>
-        <li>
+          or
           <a href='http://socialhn.r12.railsrumble.com/login/facebook'>
-            Login with Facebook
+            Facebook
           </a>
-        </li>
-      </ul>
-    </div>
-    <div class='content'>
-      <div class='wrapper'>
-        <div class='header'>
-          <h1>Social HN</h1>
         </div>
-        <div class='options'>
-          <fieldset>
-            <legend>
-              Settings
-            </legend>
-            Api key:
-            <input id='apiKey' name='apiKey' type='text' />
-          </fieldset>
-        </div>
-        <div class='actions'>
-          <button id='save'>Save</button>
-        </div>
+        <fieldset>
+          <legend>
+            Settings
+          </legend>
+          <label>Api key</label>
+          <input id='apiKey' name='apiKey' type='text' />
+        </fieldset>
+      </div>
+      <div class='actions'>
+        <button id='save'>Save</button>
       </div>
     </div>
   </body>

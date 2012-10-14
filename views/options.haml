@@ -4,32 +4,25 @@
     %meta{:charset => "utf-8"}
     %title Social HN
     %link{:rel => "stylesheet", :href => "../stylesheet/options.css"}
+    %link{:rel => "stylesheet", :href => "http://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=latin,latin-ext"}
     %script{:src => "../javascripts/vendor/jquery.js"}
     %script{:src => "../javascripts/options.js"}
-    %script{:type => "text/javascript", :src => "https://ssl.google-analytics.com/ga.js"}
   %body
-    .tab-menu
-      %h1
-        Links
-      %ul.menu
-        %li
+    .wrapper
+      .header
+        %h1 Social HN
+      .options
+        .message
+          Get an API key for free by
           %a{:href => "http://socialhn.r12.railsrumble.com/login/google_oauth2"}
-            Web Site
-        %li
-          %a{:href => "http://socialhn.r12.railsrumble.com/login/google_oauth2"}
-            Login with Google Account
-        %li
+            Google Account
+          or
           %a{:href => "http://socialhn.r12.railsrumble.com/login/facebook"}
-            Login with Facebook
-    .content
-      .wrapper
-        .header
-          %h1 Social HN
-        .options
-          %fieldset
-            %legend
-              Settings
-            Api key:
-            %input{:name =>"apiKey", :id => "apiKey", :type => "text"}
-        .actions
-          %button#save Save
+            Facebook
+        %fieldset
+          %legend
+            Settings
+          %label Api key
+          %input{:name =>"apiKey", :id => "apiKey", :type => "text"}
+      .actions
+        %button#save Save
