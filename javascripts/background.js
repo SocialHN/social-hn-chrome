@@ -25,9 +25,6 @@ $(document).ready(function() {
       if (data.notice != 'null' && data.notice != localStorage.getItem('notice')){
         chrome.browserAction.setBadgeText({text: '1'})
         localStorage["notice"] = data.notice;
-        localStorage["update_notice"] = true;
-      }else{
-        localStorage["update_notice"] = false;
       }
     });
   }
