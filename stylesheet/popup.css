@@ -1,0 +1,35 @@
+html,
+body {
+  font: 0.9em "Ubuntu", sans-serif;
+  color: #333333;
+  min-width: 180px;
+  min-height: 90px;
+  background: white;
+  padding: 0;
+  margin: 0; }
+
+.header {
+  height: 36px;
+  border-bottom: 1px solid #cccccc;
+  box-shadow: 0 0px 1px #eeeeee;
+  background: url(../images/header-bg.png) repeat-x #f6f6f6; }
+
+.title {
+  float: left;
+  background-image: url(../icon.png);
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 36px; }
+
+.settings {
+  background-image: url("../images/wrench.png");
+  background-repeat: no-repeat;
+  float: right;
+  height: 20px;
+  width: 20px;
+  padding: 8px 10px;
+  border-left: 1px solid #cccccc;
+  opacity: 0.5; }
+
+.notices {
+  border-bottom: 1px dotted #dddddd; }
